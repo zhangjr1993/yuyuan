@@ -1,0 +1,88 @@
+PODS:
+  - Flutter (1.0.0)
+  - Hero (1.6.3)
+  - HXPhotoPicker (5.0.1):
+    - HXPhotoPicker/Default (= 5.0.1)
+  - HXPhotoPicker/Camera (5.0.1):
+    - HXPhotoPicker/Camera/Lite (= 5.0.1)
+    - HXPhotoPicker/Camera/Location (= 5.0.1)
+  - HXPhotoPicker/Camera/Lite (5.0.1):
+    - HXPhotoPicker/Core
+  - HXPhotoPicker/Camera/Location (5.0.1):
+    - HXPhotoPicker/Camera/Lite
+  - HXPhotoPicker/Core (5.0.1):
+    - HXPhotoPicker/Resources
+  - HXPhotoPicker/Default (5.0.1):
+    - HXPhotoPicker/Camera
+    - HXPhotoPicker/Editor
+    - HXPhotoPicker/Picker
+  - HXPhotoPicker/Editor (5.0.1):
+    - HXPhotoPicker/EditorView
+  - HXPhotoPicker/EditorView (5.0.1):
+    - HXPhotoPicker/Core
+  - HXPhotoPicker/Picker (5.0.1):
+    - HXPhotoPicker/Core
+  - HXPhotoPicker/Resources (5.0.1)
+  - IQKeyboardManagerSwift (6.5.16)
+  - JXCategoryView (1.5.2)
+  - MBProgressHUD (1.1.0)
+  - MJRefresh (3.1.16)
+  - Realm (20.0.1):
+    - Realm/Headers (= 20.0.1)
+  - Realm/Headers (20.0.1)
+  - RealmSwift (20.0.1):
+    - Realm (= 20.0.1)
+  - SDWebImage (5.9.1):
+    - SDWebImage/Core (= 5.9.1)
+  - SDWebImage/Core (5.9.1)
+  - SmartCodable (4.3.0)
+  - SnapKit (5.7.1)
+
+DEPENDENCIES:
+  - Flutter (from `Flutter`)
+  - Hero
+  - HXPhotoPicker
+  - IQKeyboardManagerSwift (= 6.5.16)
+  - JXCategoryView (= 1.5.2)
+  - MBProgressHUD (= 1.1.0)
+  - MJRefresh (= 3.1.16)
+  - RealmSwift
+  - SDWebImage (= 5.9.1)
+  - SmartCodable (= 4.3.0)
+  - SnapKit (= 5.7.1)
+
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - Hero
+    - HXPhotoPicker
+    - IQKeyboardManagerSwift
+    - JXCategoryView
+    - MBProgressHUD
+    - MJRefresh
+    - Realm
+    - RealmSwift
+    - SDWebImage
+    - SmartCodable
+    - SnapKit
+
+EXTERNAL SOURCES:
+  Flutter:
+    :path: Flutter
+
+SPEC CHECKSUMS:
+  Flutter: f04841e97a9d0b0a8025694d0796dd46242b2854
+  Hero: 419d43384355b3168512bd8ac6a33aadd3dc575b
+  HXPhotoPicker: 9a36f66122a9576da6f735b574387cd401c98453
+  IQKeyboardManagerSwift: 12d89768845bb77b55cc092ecc2b1f9370f06b76
+  JXCategoryView: b284d35a7a8772eada05dd78642233e1eb763ea8
+  MBProgressHUD: e7baa36a220447d8aeb12769bf0585582f3866d9
+  MJRefresh: 7798e16e53a5ef7f332dd05b27664db4e29530fd
+  Realm: 9572204903ef28caeb3c03bb30c1147f354ee3e7
+  RealmSwift: d230b44017a55a1ba97de6a944da1fe3bedb92b5
+  SDWebImage: a990c053fff71e388a10f3357edb0be17929c9c5
+  SmartCodable: e1ad00634eb72d34e76e8a96cd5382bf4127cee9
+  SnapKit: d612e99e678a2d3b95bf60b0705ed0a35c03484a
+
+PODFILE CHECKSUM: 390208ee3b80456cee0a95a69beeb8e7b988d073
+
+COCOAPODS: 1.16.2
