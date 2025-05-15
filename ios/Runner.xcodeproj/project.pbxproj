@@ -85,7 +85,6 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		331C807B294A618700263BE5 /* RunnerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RunnerTests.swift; sourceTree = "<group>"; };
 		3B3967151E833CAA004F5970 /* AppFrameworkInfo.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = AppFrameworkInfo.plist; path = Flutter/AppFrameworkInfo.plist; sourceTree = "<group>"; };
 		3D5684C2F29B687043D35ED9 /* Pods_Runner.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Runner.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6F0AB338EF351C67409742F5 /* Pods-Runner.profile.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Runner.profile.xcconfig"; path = "Target Support Files/Pods-Runner/Pods-Runner.profile.xcconfig"; sourceTree = "<group>"; };
@@ -174,14 +173,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		331C8082294A63A400263BE5 /* RunnerTests */ = {
-			isa = PBXGroup;
-			children = (
-				331C807B294A618700263BE5 /* RunnerTests.swift */,
-			);
-			path = RunnerTests;
-			sourceTree = "<group>";
-		};
 		44B9879B888A5564F4F6D1AD /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -209,7 +200,6 @@
 				9740EEB11CF90186004384FC /* Flutter */,
 				AEA878F12DD48ECF003D8DBF /* Runner */,
 				97C146EF1CF9000F007C117D /* Products */,
-				331C8082294A63A400263BE5 /* RunnerTests */,
 				C0402E7692F079423C3E1059 /* Pods */,
 				44B9879B888A5564F4F6D1AD /* Frameworks */,
 			);
@@ -815,9 +805,10 @@
 				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1.0.0;
 				DEVELOPMENT_TEAM = "";
+                "DEVELOPMENT_TEAM[sdk=iphoneos*]" = 3K78M2UYQ3;
 				ENABLE_BITCODE = NO;
-				FLUTTER_APPLICATION_PATH = /Users/runner/work/yuyuan/yuyuan;
-				FLUTTER_ROOT = "/Users/runner/hostedtoolcache/flutter/3.24.4-stable/arm64";
+				FLUTTER_APPLICATION_PATH = /Users/tmp/Desktop/roleplaychat;
+				FLUTTER_ROOT = /Users/tmp/Desktop/flutter;
 				INFOPLIST_FILE = Runner/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -828,7 +819,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.fujinyy.keyuyuan;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = yuyuan_dis;
-                "PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = yuyuan_dis;
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = yuyuan_dis;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
@@ -956,10 +947,10 @@
 				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1.0.0;
 				DEVELOPMENT_TEAM = "";
-				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = 3K78M2UYQ3;
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = "";
 				ENABLE_BITCODE = NO;
-				FLUTTER_APPLICATION_PATH = /Users/runner/work/yuyuan/yuyuan;
-				FLUTTER_ROOT = "/Users/runner/hostedtoolcache/flutter/3.24.4-stable/arm64";
+				FLUTTER_APPLICATION_PATH = /Users/tmp/Desktop/roleplaychat;
+				FLUTTER_ROOT = /Users/tmp/Desktop/flutter;
 				INFOPLIST_FILE = Runner/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -989,13 +980,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1.0.0;
 				DEVELOPMENT_TEAM = "";
 				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = 3K78M2UYQ3;
 				ENABLE_BITCODE = NO;
-				FLUTTER_APPLICATION_PATH = /Users/runner/work/yuyuan/yuyuan;
-				FLUTTER_ROOT = "/Users/runner/hostedtoolcache/flutter/3.24.4-stable/arm64";
+				FLUTTER_APPLICATION_PATH = /Users/tmp/Desktop/roleplaychat;
+				FLUTTER_ROOT = /Users/tmp/Desktop/flutter;
 				INFOPLIST_FILE = Runner/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -1006,7 +998,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.fujinyy.keyuyuan;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = yuyuan_dis;
-                "PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = yuyuan_dis;
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = yuyuan_dis;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
