@@ -807,10 +807,10 @@
 				DEVELOPMENT_TEAM = "";
 				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = 3K78M2UYQ3;
 				ENABLE_BITCODE = NO;
-				FLUTTER_APPLICATION_PATH = " /Users/runner/work/yuyuan/yuyuan";
+				FLUTTER_APPLICATION_PATH = /Users/runner/work/yuyuan/yuyuan;
 				FLUTTER_ROOT = "/Users/runner/hostedtoolcache/flutter/3.24.4-stable/arm64";
 				INFOPLIST_FILE = Runner/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -949,10 +949,10 @@
 				DEVELOPMENT_TEAM = "";
 				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = "";
 				ENABLE_BITCODE = NO;
-				FLUTTER_APPLICATION_PATH = " /Users/runner/work/yuyuan/yuyuan";
+				FLUTTER_APPLICATION_PATH = /Users/runner/work/yuyuan/yuyuan;
 				FLUTTER_ROOT = "/Users/runner/hostedtoolcache/flutter/3.24.4-stable/arm64";
 				INFOPLIST_FILE = Runner/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -986,10 +986,10 @@
 				DEVELOPMENT_TEAM = "";
 				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = 3K78M2UYQ3;
 				ENABLE_BITCODE = NO;
-				FLUTTER_APPLICATION_PATH = " /Users/runner/work/yuyuan/yuyuan";
+				FLUTTER_APPLICATION_PATH = /Users/runner/work/yuyuan/yuyuan;
 				FLUTTER_ROOT = "/Users/runner/hostedtoolcache/flutter/3.24.4-stable/arm64";
 				INFOPLIST_FILE = Runner/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
