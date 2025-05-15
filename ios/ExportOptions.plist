@@ -17,7 +17,7 @@
 	<key>provisioningProfiles</key>
 	<dict>
 		<key>com.fujinyy.keyuyuan</key>
-		<string>dev_yuyuan0512</string>
+		<string>yuyuan_dis</string>
 	</dict>
 	<key>signingCertificate</key>
 	<string>Apple Distribution</string>
