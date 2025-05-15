@@ -805,10 +805,10 @@
 				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1.0.0;
 				DEVELOPMENT_TEAM = "";
-                "DEVELOPMENT_TEAM[sdk=iphoneos*]" = 3K78M2UYQ3;
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = 3K78M2UYQ3;
 				ENABLE_BITCODE = NO;
-				FLUTTER_APPLICATION_PATH = /Users/tmp/Desktop/roleplaychat;
-				FLUTTER_ROOT = /Users/tmp/Desktop/flutter;
+				FLUTTER_APPLICATION_PATH = /Users/runner/work/yuyuan/yuyuan;
+				FLUTTER_ROOT = "/Users/runner/hostedtoolcache/flutter/3.24.4-stable/arm64";
 				INFOPLIST_FILE = Runner/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -949,8 +949,8 @@
 				DEVELOPMENT_TEAM = "";
 				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = "";
 				ENABLE_BITCODE = NO;
-				FLUTTER_APPLICATION_PATH = /Users/tmp/Desktop/roleplaychat;
-				FLUTTER_ROOT = /Users/tmp/Desktop/flutter;
+				FLUTTER_APPLICATION_PATH = /Users/runner/work/yuyuan/yuyuan;
+				FLUTTER_ROOT = "/Users/runner/hostedtoolcache/flutter/3.24.4-stable/arm64";
 				INFOPLIST_FILE = Runner/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -986,8 +986,8 @@
 				DEVELOPMENT_TEAM = "";
 				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = 3K78M2UYQ3;
 				ENABLE_BITCODE = NO;
-				FLUTTER_APPLICATION_PATH = /Users/tmp/Desktop/roleplaychat;
-				FLUTTER_ROOT = /Users/tmp/Desktop/flutter;
+				FLUTTER_APPLICATION_PATH = /Users/runner/work/yuyuan/yuyuan;
+				FLUTTER_ROOT = "/Users/runner/hostedtoolcache/flutter/3.24.4-stable/arm64";
 				INFOPLIST_FILE = Runner/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
