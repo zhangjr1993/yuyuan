@@ -1,5 +1,4 @@
 import UIKit
-import SDWebImage
 import Hero
 
 class StoryDetailController: BasicController {
@@ -169,7 +168,7 @@ class StoryDetailController: BasicController {
         // 显示动画
         loadingImageView.isHidden = false
         if let gifURL = Bundle.main.url(forResource: "openingStory", withExtension: "gif") {
-            loadingImageView.sd_setImage(with: gifURL)
+            loadingImageView.kf.setImage(with: gifURL)
         }
         
         // 1秒后进入聊天页面

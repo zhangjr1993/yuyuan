@@ -5,3 +5,4 @@
 @_exported import IQKeyboardManagerSwift
 @_exported import SmartCodable
 @_exported import HXPhotoPicker
+@_exported import Kingfisher
