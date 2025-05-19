@@ -28,5 +28,6 @@ struct StoryChatInfoModel: SmartCodable {
     var name: String = ""
     var intro: String = ""
     var mid = 0
+    var audioFile = ""
     var actInfo: ActModel = ActModel()
 }

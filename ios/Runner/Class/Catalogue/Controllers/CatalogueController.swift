@@ -111,6 +111,7 @@ class CatalogueController: BasicController {
         chatModel.name = storyModel.name
         chatModel.intro = storyModel.intro
         chatModel.mid = storyModel.mid
+        chatModel.audioFile = storyModel.audioFile
         chatModel.actInfo = actModel
         
         // 创建并跳转到聊天控制器

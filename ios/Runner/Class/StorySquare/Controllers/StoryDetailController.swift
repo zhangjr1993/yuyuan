@@ -194,6 +194,7 @@ class StoryDetailController: BasicController {
             chatModel.name = storyDetail.name
             chatModel.intro = storyDetail.intro
             chatModel.mid = storyDetail.mid
+            chatModel.audioFile = storyDetail.audioFile
             chatModel.actInfo = actModel
             
             let chatVC = StoryChatController(chatInfoModel: chatModel)

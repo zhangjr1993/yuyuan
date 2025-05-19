@@ -11,6 +11,7 @@ struct StoryList: SmartCodable {
 // MARK: - Story
 struct StoryModel: SmartCodable {
     var name: String = ""
+    var audioFile = ""
     var cover: String = ""
     var chatNum: Int = 0
     var mid: Int = 0

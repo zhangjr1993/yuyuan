@@ -224,11 +224,18 @@ class EditProfileController: BasicController {
         config.photoList.sort = .desc
         config.photoList.finishSelectionAfterTakingPhoto = true
         config.photoList.isSaveSystemAlbum = false
+//        // 编辑模式
+//        let tools: EditorConfiguration.ToolsView = {
+//            let cropSize = EditorConfiguration.ToolsView.Options(imageType: .local("hx_editor_photo_crop"), type: .cropSize)
+//            return .init(toolOptions: [cropSize])
+//        }()
+//        config.editor.toolsView = tools
         config.editor.photo.defaultSelectedToolOption = .cropSize
         config.editor.cropSize.aspectRatios = []
         config.editor.isFixedCropSizeState = true
         config.editor.cropSize.isFixedRatio = true
         config.editor.cropSize.aspectRatio = .init(width: 1, height: 1)
+        
         var cameraConfig = CameraConfiguration()
         cameraConfig.sessionPreset = .hd1920x1080
         cameraConfig.modalPresentationStyle = .fullScreen

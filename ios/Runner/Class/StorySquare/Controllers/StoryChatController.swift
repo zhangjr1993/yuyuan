@@ -1,5 +1,6 @@
 import UIKit
 import MJRefresh
+import AVFoundation
 
 // MARK: - Message Type
 enum MessageType {
@@ -23,7 +24,8 @@ class StoryChatController: BasicController {
     private var currentPage: Int = 0
     private var isLoadingMore: Bool = false
     private var hasInsertedTip = false
-    
+    private var audioPlayer: AVAudioPlayer?
+
     private lazy var tableView: UITableView = {
         let table = UITableView()
         table.separatorStyle = .none
@@ -67,6 +69,16 @@ class StoryChatController: BasicController {
         setupTableView()
         setupTapGesture()
         loadInitialMessages()
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        setupBackgroundMusic()
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        stopBackgroundMusic()
     }
     
     override func setupUI() {
@@ -282,6 +294,47 @@ class StoryChatController: BasicController {
             ]
             tableView.insertRows(at: indexPaths, with: .none)
             tableView.endUpdates()
+        }
+    }
+    
+    private func setupBackgroundMusic() {
+        guard let audioPath = Bundle.main.path(forResource: chatModel.audioFile, ofType: "mp3") else {
+            return
+        }
+        
+        // 配置音频会话以支持后台播放
+        do {
+            try AVAudioSession.sharedInstance().setCategory(.playback, mode: .default)
+            try AVAudioSession.sharedInstance().setActive(true)
+        } catch {
+            print("Error setting up audio session: \(error.localizedDescription)")
+        }
+        
+        let audioUrl = URL(fileURLWithPath: audioPath)
+        
+        do {
+            audioPlayer = try AVAudioPlayer(contentsOf: audioUrl)
+            audioPlayer?.numberOfLoops = -1 // 无限循环播放
+            audioPlayer?.prepareToPlay()
+            
+            // Delay 6 seconds before playing
+            DispatchQueue.main.asyncAfter(deadline: .now() + 6) { [weak self] in
+                self?.audioPlayer?.play()
+            }
+        } catch {
+            print("Error setting up audio player: \(error.localizedDescription)")
+        }
+    }
+    
+    private func stopBackgroundMusic() {
+        // 先淡出音量
+        audioPlayer?.volume = 0.5
+        UIView.animate(withDuration: 0.3) { [weak self] in
+            self?.audioPlayer?.volume = 0
+        } completion: { [weak self] _ in
+            // 音量淡出后再停止和释放
+            self?.audioPlayer?.stop()
+            self?.audioPlayer = nil
         }
     }
 }

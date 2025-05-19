@@ -4,6 +4,7 @@
             "name": "时光倒流七十年",
             "cover": "cover_001",
             "chatNum": 85,
+            "audioFile": "Victory",
             "mid": 1,
             "intro": "现代白领李明意外穿越到1950年代，在那个物资匮乏但人情味浓厚的年代，经历了一段难忘的人生。",
             "act": [
@@ -91,6 +92,7 @@
         },
         {
             "name": "都市总裁的双面人生",
+            "audioFile": "DoubleTake",
             "cover": "ceo_cover",
             "chatNum": 92,
             "mid": 2,
@@ -180,6 +182,7 @@
         },
         {
             "name": "仙剑奇缘",
+            "audioFile": "Hidden",
             "cover": "cover_005",
             "chatNum": 78,
             "mid": 3,
@@ -271,6 +274,7 @@
     "novel": [
         {
             "name": "超能力学院",
+            "audioFile": "Obscura",
             "cover": "super_power_cover",
             "chatNum": 96,
             "mid": 101,
@@ -360,6 +364,7 @@
         },
         {
             "name": "玄门异志",
+            "audioFile": "Hidden",
             "cover": "magic_story_cover",
             "chatNum": 89,
             "mid": 102,
@@ -451,6 +456,7 @@
     "drama": [
         {
             "name": "创业时代",
+            "audioFile": "Obscura",
             "cover": "startup_era_cover",
             "chatNum": 87,
             "mid": 201,
@@ -540,6 +546,7 @@
         },
         {
             "name": "未来实验室",
+            "audioFile": "Pulsewave",
             "cover": "future_lab_cover",
             "chatNum": 90,
             "mid": 202,
