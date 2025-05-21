@@ -19,6 +19,9 @@ class UserCenterController: BasicController {
     }()
     
     private let sections: [[String: Any]] = [
+        ["title": "会员服务", "items": [
+            ["title": "会员中心", "icon": "crown.fill"],
+        ]],
         ["title": "账号安全", "items": [
             ["title": "用户协议", "icon": "doc.text.fill"],
             ["title": "隐私协议", "icon": "lock.shield.fill"],
@@ -174,6 +177,10 @@ extension UserCenterController: UITableViewDelegate, UITableViewDataSource {
             case "意见反馈":
                 let feedbackVC = FeedbackViewController()
                 navigationController?.pushViewController(feedbackVC, animated: true)
+            case "会员中心":
+                let membershipVC = MemberController()
+                navigationController?.pushViewController(membershipVC, animated: true)
+                break
             case "关于我们":
                 let aboutUsVC = AboutUsViewController()
                 navigationController?.pushViewController(aboutUsVC, animated: true)

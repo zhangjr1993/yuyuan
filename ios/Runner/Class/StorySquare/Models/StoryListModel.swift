@@ -22,6 +22,8 @@ struct StoryModel: SmartCodable {
 // MARK: - Act
 struct ActModel: SmartCodable {
     var actId = 0
+    var coin = 0
+    var isLock = false
     var title: String = ""
     var desc: String = ""
     var background: String = ""

@@ -11,6 +11,8 @@ struct UserModel: Codable {
     var gender: Int // 0: 未知, 1: 男, 2: 女
     var age: Int
     var signature: String
+    // 花朵
+    var coin = 0
     
     init(uid: String = UUID().uuidString,
          account: String = "",
@@ -19,7 +21,8 @@ struct UserModel: Codable {
          avatar: String = "",
          gender: Int = 0,
          age: Int = 0,
-         signature: String = "") {
+         signature: String = "",
+         coin: Int = 0) {
         self.uid = uid
         self.account = account
         self.password = password
@@ -28,6 +31,7 @@ struct UserModel: Codable {
         self.gender = gender
         self.age = age
         self.signature = signature
+        self.coin = coin
     }
 }
 
@@ -42,6 +46,7 @@ class RealmUserModel: Object {
     @Persisted var age: Int
     @Persisted var signature: String
     @Persisted var lastLoginTime: Date
+    @Persisted var coin: Int
     
     convenience init(user: UserModel) {
         self.init()
@@ -54,6 +59,7 @@ class RealmUserModel: Object {
         self.age = user.age
         self.signature = user.signature
         self.lastLoginTime = Date()
+        self.coin = user.coin
     }
     
     func toUserModel() -> UserModel {
@@ -65,7 +71,8 @@ class RealmUserModel: Object {
             avatar: avatar,
             gender: gender,
             age: age,
-            signature: signature
+            signature: signature,
+            coin: coin
         )
     }
     

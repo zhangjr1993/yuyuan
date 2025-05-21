@@ -21,6 +21,6 @@ class BasicController: UIViewController {
     }
     
     func setupUI() {
-        view.backgroundColor = .white
+        view.backgroundColor = UIColor.hexStr("#F6F8FF")
     }
 } 

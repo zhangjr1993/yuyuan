@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		0E414E8EC1424F7DD328C4DD /* Pods_Runner.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D5684C2F29B687043D35ED9 /* Pods_Runner.framework */; };
 		3B3967161E833CAA004F5970 /* AppFrameworkInfo.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3B3967151E833CAA004F5970 /* AppFrameworkInfo.plist */; };
+		AE4A93802DDC26C300144E39 /* MemberController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE4A937F2DDC26C300144E39 /* MemberController.swift */; };
+		AE6136102DDC665B0001859A /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE61360F2DDC665B0001859A /* StoreKit.framework */; };
 		AE903A242DDAC89C00D99E04 /* Pulsewave.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = AE903A222DDAC89C00D99E04 /* Pulsewave.mp3 */; };
 		AE903A252DDAC89C00D99E04 /* Victory.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = AE903A232DDAC89C00D99E04 /* Victory.mp3 */; };
 		AE903A262DDAC89C00D99E04 /* Hidden.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = AE903A202DDAC89C00D99E04 /* Hidden.mp3 */; };
@@ -97,6 +99,9 @@
 		9740EEB21CF90195004384FC /* Debug.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = Debug.xcconfig; path = Flutter/Debug.xcconfig; sourceTree = "<group>"; };
 		9740EEB31CF90195004384FC /* Generated.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = Generated.xcconfig; path = Flutter/Generated.xcconfig; sourceTree = "<group>"; };
 		97C146EE1CF9000F007C117D /* Runner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Runner.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AE4A937F2DDC26C300144E39 /* MemberController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemberController.swift; sourceTree = "<group>"; };
+		AE61360E2DDC66440001859A /* RunnerDebug.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = RunnerDebug.entitlements; sourceTree = "<group>"; };
+		AE61360F2DDC665B0001859A /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		AE903A1F2DDAC89C00D99E04 /* DoubleTake.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = DoubleTake.mp3; sourceTree = "<group>"; };
 		AE903A202DDAC89C00D99E04 /* Hidden.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Hidden.mp3; sourceTree = "<group>"; };
 		AE903A212DDAC89C00D99E04 /* Obscura.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Obscura.mp3; sourceTree = "<group>"; };
@@ -179,6 +184,7 @@
 				AEE8DA1F2D93E5E200CA129C /* AVFoundation.framework in Frameworks */,
 				AEE8DA1D2D93E5D800CA129C /* UIKit.framework in Frameworks */,
 				0E414E8EC1424F7DD328C4DD /* Pods_Runner.framework in Frameworks */,
+				AE6136102DDC665B0001859A /* StoreKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -188,6 +194,7 @@
 		44B9879B888A5564F4F6D1AD /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				AE61360F2DDC665B0001859A /* StoreKit.framework */,
 				AEE8DA1E2D93E5E200CA129C /* AVFoundation.framework */,
 				AEE8DA1C2D93E5D800CA129C /* UIKit.framework */,
 				3D5684C2F29B687043D35ED9 /* Pods_Runner.framework */,
@@ -429,6 +436,7 @@
 				AEA878CF2DD48ECF003D8DBF /* FeedbackViewController.swift */,
 				AEA878D02DD48ECF003D8DBF /* HelpViewController.swift */,
 				AEA878D12DD48ECF003D8DBF /* UserCenterController.swift */,
+				AE4A937F2DDC26C300144E39 /* MemberController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -506,6 +514,7 @@
 		AEA878F12DD48ECF003D8DBF /* Runner */ = {
 			isa = PBXGroup;
 			children = (
+				AE61360E2DDC66440001859A /* RunnerDebug.entitlements */,
 				AEA8789F2DD48ECF003D8DBF /* Basic */,
 				AEA878D72DD48ECF003D8DBF /* Class */,
 				AEA878D92DD48ECF003D8DBF /* Define */,
@@ -742,6 +751,7 @@
 				AEA879282DD48ECF003D8DBF /* UIColor+Extension.swift in Sources */,
 				AEA879292DD48ECF003D8DBF /* UIDevice+Extension.swift in Sources */,
 				AEA8792A2DD48ECF003D8DBF /* UIImage+Extension.swift in Sources */,
+				AE4A93802DDC26C300144E39 /* MemberController.swift in Sources */,
 				AEA8792B2DD48ECF003D8DBF /* AppDelegate.swift in Sources */,
 				AEA8792C2DD48ECF003D8DBF /* GeneratedPluginRegistrant.m in Sources */,
 			);
@@ -829,20 +839,21 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 5;
+				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = "";
 				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = 3K78M2UYQ3;
 				ENABLE_BITCODE = NO;
-				FLUTTER_APPLICATION_PATH = /Users/runner/work/yuyuan/yuyuan;
-				FLUTTER_BUILD_NUMBER = 5;
-				FLUTTER_ROOT = "/Users/runner/hostedtoolcache/flutter/3.24.4-stable/arm64";
+				FLUTTER_APPLICATION_PATH = /Users/tmp/Desktop/roleplaychat;
+				FLUTTER_BUILD_NAME = 1.0.1;
+				FLUTTER_BUILD_NUMBER = 1;
+				FLUTTER_ROOT = /Users/tmp/Desktop/flutter;
 				INFOPLIST_FILE = Runner/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0.0;
+				MARKETING_VERSION = 1.0.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.fujinyy.keyuyuan;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = yuyuan_dis;
@@ -973,25 +984,27 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = Runner/RunnerDebug.entitlements;
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 5;
+				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = "";
-				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = 3K78M2UYQ3;
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = 6VFR63B9QM;
 				ENABLE_BITCODE = NO;
-				FLUTTER_APPLICATION_PATH = /Users/runner/work/yuyuan/yuyuan;
-				FLUTTER_BUILD_NUMBER = 5;
-				FLUTTER_ROOT = "/Users/runner/hostedtoolcache/flutter/3.24.4-stable/arm64";
+				FLUTTER_APPLICATION_PATH = /Users/tmp/Desktop/roleplaychat;
+				FLUTTER_BUILD_NAME = 1.0.1;
+				FLUTTER_BUILD_NUMBER = 1;
+				FLUTTER_ROOT = /Users/tmp/Desktop/flutter;
 				INFOPLIST_FILE = Runner/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.happychatyyds.apps;
+				MARKETING_VERSION = 1.0.1;
+				PRODUCT_BUNDLE_IDENTIFIER = ios.sweete.happy;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = xiuliao_dev_20250507;
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = sweete_dev_20250507;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
@@ -1012,20 +1025,21 @@
 				CLANG_ENABLE_MODULES = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 5;
+				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = "";
 				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = 3K78M2UYQ3;
 				ENABLE_BITCODE = NO;
-				FLUTTER_APPLICATION_PATH = /Users/runner/work/yuyuan/yuyuan;
-				FLUTTER_BUILD_NUMBER = 5;
-				FLUTTER_ROOT = "/Users/runner/hostedtoolcache/flutter/3.24.4-stable/arm64";
+				FLUTTER_APPLICATION_PATH = /Users/tmp/Desktop/roleplaychat;
+				FLUTTER_BUILD_NAME = 1.0.1;
+				FLUTTER_BUILD_NUMBER = 1;
+				FLUTTER_ROOT = /Users/tmp/Desktop/flutter;
 				INFOPLIST_FILE = Runner/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0.0;
+				MARKETING_VERSION = 1.0.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.fujinyy.keyuyuan;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = yuyuan_dis;

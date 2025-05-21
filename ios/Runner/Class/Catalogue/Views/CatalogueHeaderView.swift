@@ -15,7 +15,7 @@ class CatalogueHeaderView: UITableViewHeaderFooterView {
         let imageView = UIImageView()
         imageView.contentMode = .scaleAspectFill
         imageView.clipsToBounds = true
-        imageView.layer.cornerRadius = 22
+        imageView.layer.cornerRadius = 12
         return imageView
     }()
     
@@ -47,7 +47,7 @@ class CatalogueHeaderView: UITableViewHeaderFooterView {
     
     // MARK: - Setup
     private func setupViews() {
-        contentView.backgroundColor = .white
+        contentView.backgroundColor = UIColor.hexStr("#F6F8FF")
         
         contentView.addSubview(avatarImageView)
         contentView.addSubview(titleLabel)
@@ -60,8 +60,8 @@ class CatalogueHeaderView: UITableViewHeaderFooterView {
         NSLayoutConstraint.activate([
             avatarImageView.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 15),
             avatarImageView.centerYAnchor.constraint(equalTo: contentView.centerYAnchor),
-            avatarImageView.widthAnchor.constraint(equalToConstant: 44),
-            avatarImageView.heightAnchor.constraint(equalToConstant: 44),
+            avatarImageView.widthAnchor.constraint(equalToConstant: 69),
+            avatarImageView.heightAnchor.constraint(equalToConstant: 69),
             
             titleLabel.leadingAnchor.constraint(equalTo: avatarImageView.trailingAnchor, constant: 10),
             titleLabel.centerYAnchor.constraint(equalTo: avatarImageView.centerYAnchor),

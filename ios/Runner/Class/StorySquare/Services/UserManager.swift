@@ -5,6 +5,7 @@ class UserManager {
     static let shared = UserManager()
     
     private let userDefaultsKey = "isUserLoggedIn"
+    private let membershipExpiryKeyPrefix = "membershipExpiryDate_"
         
     var isLoggedIn: Bool {
         get {
@@ -12,6 +13,44 @@ class UserManager {
         }
         set {
             UserDefaults.standard.set(newValue, forKey: userDefaultsKey)
+        }
+    }
+    
+    private func getMembershipExpiryKey() -> String {
+        return membershipExpiryKeyPrefix + currentUser.uid
+    }
+    
+    var membershipExpiryDate: Date? {
+        get {
+            return UserDefaults.standard.object(forKey: getMembershipExpiryKey()) as? Date
+        }
+        set {
+            UserDefaults.standard.set(newValue, forKey: getMembershipExpiryKey())
+        }
+    }
+    
+    var isMembershipValid: Bool {
+        guard let expiryDate = membershipExpiryDate else { return false }
+        return expiryDate > Date()
+    }
+    
+    var membershipDaysRemaining: String {
+        guard let expiryDate = membershipExpiryDate else { return "" }
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "yyyy-MM-dd"
+        return dateFormatter.string(from: expiryDate)
+    }
+    
+    var actIdArray: [Int] {
+        set {
+            UserDefaults.standard.setValue(newValue, forKey: "UserLockActIds")
+        }
+        get {
+            if let value = UserDefaults.standard.value(forKey: "UserLockActIds") as? [Int] {
+                return value
+            }else {
+                return []
+            }
         }
     }
     
@@ -135,7 +174,8 @@ class UserManager {
                    avatar: String? = nil,
                    gender: Int? = nil,
                    age: Int? = nil,
-                   signature: String? = nil) {
+                   signature: String? = nil,
+                   coin: Int? = nil) {
         // 更新内存中的用户信息
         if let nickname = nickname {
             currentUser = UserModel(
@@ -144,7 +184,8 @@ class UserManager {
                 avatar: currentUser.avatar,
                 gender: currentUser.gender,
                 age: currentUser.age,
-                signature: currentUser.signature
+                signature: currentUser.signature,
+                coin: currentUser.coin
             )
         }
         
@@ -155,7 +196,8 @@ class UserManager {
                 avatar: avatar,
                 gender: currentUser.gender,
                 age: currentUser.age,
-                signature: currentUser.signature
+                signature: currentUser.signature,
+                coin: currentUser.coin
             )
         }
         
@@ -166,7 +208,8 @@ class UserManager {
                 avatar: currentUser.avatar,
                 gender: gender,
                 age: currentUser.age,
-                signature: currentUser.signature
+                signature: currentUser.signature,
+                coin: currentUser.coin
             )
         }
         
@@ -177,7 +220,8 @@ class UserManager {
                 avatar: currentUser.avatar,
                 gender: currentUser.gender,
                 age: age,
-                signature: currentUser.signature
+                signature: currentUser.signature,
+                coin: currentUser.coin
             )
         }
         
@@ -188,7 +232,20 @@ class UserManager {
                 avatar: currentUser.avatar,
                 gender: currentUser.gender,
                 age: currentUser.age,
-                signature: signature
+                signature: signature,
+                coin: currentUser.coin
+            )
+        }
+        
+        if let coin = coin {
+            currentUser = UserModel(
+                uid: currentUser.uid,
+                nickname: currentUser.nickname,
+                avatar: currentUser.avatar,
+                gender: currentUser.gender,
+                age: currentUser.age,
+                signature: currentUser.signature,
+                coin: coin
             )
         }
         
@@ -228,6 +285,29 @@ class UserManager {
             }
         } catch {
             print("Error deleting user: \(error.localizedDescription)")
+        }
+    }
+    
+    /// 更新会员信息
+    func updateMembership(productId: String) {
+        let calendar = Calendar.current
+        let now = Date()
+        
+        // 根据产品ID设置不同的会员时长
+        var daysToAdd: Int = 0
+        switch productId {
+        case "com.fujinyy.keyuyuan2":
+            daysToAdd = 90
+        default:
+            daysToAdd = 30
+        }
+        
+        // 如果已有会员，在现有到期时间基础上增加天数
+        if let currentExpiry = membershipExpiryDate, currentExpiry > now {
+            membershipExpiryDate = calendar.date(byAdding: .day, value: daysToAdd, to: currentExpiry)
+        } else {
+            // 如果没有会员或已过期，从当前时间开始计算
+            membershipExpiryDate = calendar.date(byAdding: .day, value: daysToAdd, to: now)
         }
     }
 } 

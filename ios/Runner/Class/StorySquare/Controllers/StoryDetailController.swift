@@ -62,38 +62,17 @@ class StoryDetailController: BasicController {
         
         // Set navigation title
         title = storyDetail.name
-        
-        // 设置 Hero
-        isHeroEnabled = true
-        view.heroID = cellHeroId
-        
-        // 设置 Hero 修饰符
-        view.heroModifiers = [
-            .spring(stiffness: 250, damping: 25)
-        ]
+
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        
-        // 设置头部图片的 Hero ID
-        headerView.imageView.heroID = coverHeroId
-        headerView.imageView.heroModifiers = [
-            .spring(stiffness: 250, damping: 25)
-        ]
         updateEnterButtonTitle()
     }
     
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
-        
-        // 设置标题的 Hero ID
-        if let cell = tableView.cellForRow(at: IndexPath(row: 0, section: 0)) as? StoryInfoCell {
-            cell.titleLabel.heroID = titleHeroId
-            cell.titleLabel.heroModifiers = [
-                .spring(stiffness: 250, damping: 25)
-            ]
-        }
+     
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -151,6 +130,7 @@ class StoryDetailController: BasicController {
     private func updateEnterButtonTitle() {
         let title = currentProgress != nil ? "继续聊天" : "开启第一幕"
         enterButton.setTitle(title, for: .normal)
+        tableView.reloadData()
     }
     
     private func saveUserProgress(actTitle: String) {
@@ -253,11 +233,55 @@ extension StoryDetailController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         guard indexPath.section == 1 else { return }
-        let actModel = storyDetail.act[indexPath.row]
+        var actModel = storyDetail.act[indexPath.row]
         
+        let tempArr = UserManager.shared.actIdArray
+        actModel.isLock = tempArr.contains(actModel.actId)
+        
+        if !actModel.isLock && !UserManager.shared.isMembershipValid {
+            let alert = UIAlertController(title: "温馨提示", message: "是否消耗\(actModel.coin)金币解锁故事？", preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: "确定", style: .default) { [weak self] _ in
+                guard let `self` = self else { return }
+                self.costFlowerLock(actModel)
+            })
+            alert.addAction(UIAlertAction(title: "取消", style: .cancel) { _ in
+                
+            })
+            present(alert, animated: true)
+            
+            return
+        }
+        
+        self.startStoryChat(actModel)
+    }
+    
+    private func startStoryChat(_ actModel: ActModel) {
         // 保存用户进度
         saveUserProgress(actTitle: actModel.title)
         currentProgress?.currentActTitle = actModel.title
         self.enterChatRoom()
+    }
+    
+    private func costFlowerLock(_ model: ActModel) {
+        if UserManager.shared.currentUser.coin - model.coin >= 0 {
+            if !UserManager.shared.actIdArray.contains(model.actId) {
+                var tempArr = UserManager.shared.actIdArray
+                tempArr.append(model.actId)
+                UserManager.shared.actIdArray = tempArr
+            }
+            var currentUser = UserManager.shared.currentUser
+            currentUser.coin -= model.coin
+            UserManager.shared.updateUser(coin: currentUser.coin)
+            
+            self.startStoryChat(model)
+        }else {
+            let alert = UIAlertController(title: "温馨提示", message: "余额不足，是否前往充值页面？", preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: "前往", style: .default) { [weak self] _ in
+                guard let `self` = self else { return }
+                let vc = MemberController()
+                self.navigationController?.pushViewController(vc, animated: true)
+            })
+            present(alert, animated: true)
+        }
     }
 }

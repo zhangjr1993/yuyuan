@@ -46,6 +46,12 @@ class CatalogueListCell: UITableViewCell {
         return view
     }()
     
+    private let lockImageView: UIImageView = {
+        let imageView = UIImageView()
+        imageView.image = UIImage(named: "icon_jiasuo")
+        return imageView
+    }()
+    
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
         setupViews()
@@ -63,6 +69,7 @@ class CatalogueListCell: UITableViewCell {
         contentView.addSubview(profileLabel)
         contentView.addSubview(lastMessageLabel)
         contentView.addSubview(progressIndicator)
+        contentView.addSubview(lockImageView)
         
         avatarImageView.translatesAutoresizingMaskIntoConstraints = false
         infoLabel.translatesAutoresizingMaskIntoConstraints = false
@@ -92,7 +99,13 @@ class CatalogueListCell: UITableViewCell {
             progressIndicator.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 5),
             progressIndicator.centerYAnchor.constraint(equalTo: contentView.centerYAnchor),
             progressIndicator.widthAnchor.constraint(equalToConstant: 4),
-            progressIndicator.heightAnchor.constraint(equalToConstant: 40)
+            progressIndicator.heightAnchor.constraint(equalToConstant: 40),
+            
+            lockImageView.leadingAnchor.constraint(equalTo: infoLabel.trailingAnchor, constant: 8),
+            lockImageView.centerYAnchor.constraint(equalTo: infoLabel.centerYAnchor),
+            lockImageView.widthAnchor.constraint(equalToConstant: 14),
+            lockImageView.heightAnchor.constraint(equalToConstant: 14),
+
         ])
     }
     
@@ -116,14 +129,7 @@ class CatalogueListCell: UITableViewCell {
             contentView.backgroundColor = .white
         }
         
-        // Configure last message
-//        if let lastMessage = model.lastMessage, !lastMessage.isEmpty {
-//            lastMessageLabel.text = lastMessage
-//            lastMessageLabel.isHidden = false
-//            lastMessageLabel.bottomAnchor.constraint(equalTo: contentView.bottomAnchor, constant: -10).isActive = true
-//        } else {
-//            lastMessageLabel.isHidden = true
-//            lastMessageLabel.bottomAnchor.constraint(equalTo: contentView.bottomAnchor, constant: 0).isActive = true
-//        }
+        let tempArr = UserManager.shared.actIdArray
+        lockImageView.isHidden = model.isLock || tempArr.contains(model.actId)
     }
 }

@@ -34,6 +34,7 @@ pod 'Hero'
 pod 'MJRefresh', '3.1.16'
 pod 'JXCategoryView', '1.5.2'
 pod 'Kingfisher'
+pod 'ProgressHUD'
 
 # 数据库
 pod 'RealmSwift'

@@ -368,6 +368,25 @@ extension StoryChatController: UITableViewDataSource, UITableViewDelegate {
 // MARK: - ChatInputViewDelegate
 extension StoryChatController: ChatInputViewDelegate {
     func chatInputView(_ inputView: ChatInputView, didSendMessage message: String) {
+        // Check if user has enough coins
+        if UserManager.shared.currentUser.coin - 1 < 0 && !UserManager.shared.isMembershipValid {
+            let alert = UIAlertController(title: "温馨提示", message: "余额不足，是否前往充值页面？", preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: "前往", style: .default) { [weak self] _ in
+                guard let `self` = self else { return }
+                let vc = MemberController()
+                self.navigationController?.pushViewController(vc, animated: true)
+            })
+            alert.addAction(UIAlertAction(title: "取消", style: .cancel) { _ in
+                
+            })
+            present(alert, animated: true)
+            return
+        }
+        
+        var currentUser = UserManager.shared.currentUser
+        currentUser.coin -= 1
+        UserManager.shared.updateUser(coin: currentUser.coin)
+        
         // 添加用户消息
         let userMessage = MessageModel(
             content: message,

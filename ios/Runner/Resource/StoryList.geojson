@@ -13,6 +13,8 @@
                     "title": "误入旧时光",
                     "desc": "你扮演李明，一位刚刚穿越到过去的现代人。",
                     "background": "1953年的老上海，街道上人力车与自行车穿梭。",
+                    "coin": 0,
+                    "isLock": true,
                     "playRole": {
                         "name": "李明",
                         "sex": "男",
@@ -33,6 +35,8 @@
                     "title": "适应新生活",
                     "desc": "你扮演李明，开始在纺织厂工作。",
                     "background": "热闹的纺织厂车间，机器轰鸣声中充满生机。",
+                    "coin": 0,
+                    "isLock": true,
                     "playRole": {
                         "name": "李明",
                         "sex": "男",
@@ -53,6 +57,8 @@
                     "title": "技术革新",
                     "desc": "你扮演李明，提出改进生产线的建议。",
                     "background": "工厂会议室，墙上挂着各种生产计划表。",
+                    "coin": 0,
+                    "isLock": true,
                     "playRole": {
                         "name": "李明",
                         "sex": "男",
@@ -73,6 +79,8 @@
                     "title": "情感抉择",
                     "desc": "你扮演李明，面临是否留在这个年代的选择。",
                     "background": "江边的小公园，夕阳西下。",
+                    "coin": 0,
+                    "isLock": true,
                     "playRole": {
                         "name": "李明",
                         "sex": "男",
@@ -103,6 +111,8 @@
                     "title": "商战与暗战",
                     "desc": "你扮演秦天，在处理公司危机的同时还要对付神秘组织。",
                     "background": "现代化的总裁办公室，落地窗外是繁华都市。",
+                    "coin": 0,
+                    "isLock": true,
                     "playRole": {
                         "name": "秦天",
                         "sex": "男",
@@ -123,6 +133,8 @@
                     "title": "身份危机",
                     "desc": "你扮演秦天，在一次营救行动中险些暴露身份。",
                     "background": "深夜的实验室，警报声此起彼伏。",
+                    "coin": 0,
+                    "isLock": true,
                     "playRole": {
                         "name": "秦天",
                         "sex": "男",
@@ -143,6 +155,8 @@
                     "title": "公司危机",
                     "desc": "你扮演秦天，应对商业对手的恶意收购。",
                     "background": "紧张的董事会会议室，各方势力暗流涌动。",
+                    "coin": 0,
+                    "isLock": true,
                     "playRole": {
                         "name": "秦天",
                         "sex": "男",
@@ -163,6 +177,8 @@
                     "title": "真相大白",
                     "desc": "你扮演秦天，身份即将被林雨晴发现。",
                     "background": "公司天台，城市夜景璀璨。",
+                    "coin": 0,
+                    "isLock": true,
                     "playRole": {
                         "name": "秦天",
                         "sex": "男",
@@ -193,6 +209,8 @@
                     "title": "遇见仙剑",
                     "desc": "你扮演陈雪，在考古发掘中发现神秘古剑。",
                     "background": "深山古墓，青铜器和古玉散发着神秘光芒。",
+                    "coin": 0,
+                    "isLock": true,
                     "playRole": {
                         "name": "陈雪",
                         "sex": "女",
@@ -213,6 +231,8 @@
                     "title": "修真入门",
                     "desc": "你扮演陈雪，开始学习修真法术。",
                     "background": "隐世山门，云雾缭绕，仙鹤飞舞。",
+                    "coin": 0,
+                    "isLock": true,
                     "playRole": {
                         "name": "陈雪",
                         "sex": "女",
@@ -233,6 +253,8 @@
                     "title": "门派试炼",
                     "desc": "你扮演陈雪，参加宗门大比。",
                     "background": "宏伟的比武场，各路修真者齐聚。",
+                    "coin": 0,
+                    "isLock": true,
                     "playRole": {
                         "name": "陈雪",
                         "sex": "女",
@@ -253,6 +275,8 @@
                     "title": "真相之谜",
                     "desc": "你扮演陈雪，发现仙剑背后的秘密。",
                     "background": "古老的藏经阁，典籍散发着岁月的气息。",
+                    "coin": 15,
+                    "isLock": true,
                     "playRole": {
                         "name": "陈雪",
                         "sex": "女",
@@ -285,6 +309,8 @@
                     "title": "觉醒之日",
                     "desc": "你扮演王小明，刚刚觉醒超能力的高中生。",
                     "background": "现代化的高中教室，一个平常的午后。",
+                    "coin": 0,
+                    "isLock": true,
                     "playRole": {
                         "name": "王小明",
                         "sex": "男",
@@ -305,6 +331,8 @@
                     "title": "能力训练",
                     "desc": "你扮演王小明，在特殊学院学习控制能力。",
                     "background": "高科技训练场，各种先进设备。",
+                    "coin": 0,
+                    "isLock": true,
                     "playRole": {
                         "name": "王小明",
                         "sex": "男",
@@ -325,6 +353,8 @@
                     "title": "首次任务",
                     "desc": "你扮演王小明，参与第一次实战任务。",
                     "background": "繁华的商业街，一场危机正在发生。",
+                    "coin": 0,
+                    "isLock": true,
                     "playRole": {
                         "name": "王小明",
                         "sex": "男",
@@ -345,6 +375,8 @@
                     "title": "能力进阶",
                     "desc": "你扮演王小明，发现能力的新境界。",
                     "background": "神秘的时空实验室，充满未知的能量。",
+                    "coin": 0,
+                    "isLock": true,
                     "playRole": {
                         "name": "王小明",
                         "sex": "男",
@@ -363,6 +395,104 @@
             ]
         },
         {
+            "name": "魔法学院：元素使者",
+            "audioFile": "Mystic",
+            "cover": "magic_academy_cover",
+            "chatNum": 93,
+            "mid": 103,
+            "intro": "在一个魔法与科技并存的世界，主角苏雨晴发现自己拥有罕见的元素亲和力，被选入最神秘的魔法学院。",
+            "act": [
+                {
+                    "actId": 1033,
+                    "title": "魔法觉醒",
+                    "desc": "你扮演苏雨晴，发现自己拥有元素亲和力。",
+                    "background": "现代都市中的魔法学院，古老与现代完美融合。",
+                    "coin": 0,
+                    "isLock": true,
+                    "playRole": {
+                        "name": "苏雨晴",
+                        "sex": "女",
+                        "age": 18,
+                        "profile": "普通高中生，意外觉醒元素亲和力，性格开朗。",
+                        "headpic": "header_magic_girl",
+                    },
+                    "aiRole": {
+                        "name": "元素导师",
+                        "sex": "男",
+                        "age": 40,
+                        "profile": "经验丰富的魔法导师，发现苏雨晴的潜力。",
+                        "headpic": "header_magic_teacher",
+                    }
+                },
+                {
+                    "actId": 1034,
+                    "title": "元素试炼",
+                    "desc": "你扮演苏雨晴，参加元素亲和力测试。",
+                    "background": "魔法试炼场，元素能量四溢。",
+                    "coin": 10,
+                    "isLock": false,
+                    "playRole": {
+                        "name": "苏雨晴",
+                        "sex": "女",
+                        "age": 18,
+                        "profile": "努力掌握元素力量，展现惊人天赋。",
+                        "headpic": "header_magic_girl",
+                    },
+                    "aiRole": {
+                        "name": "元素精灵",
+                        "sex": "女",
+                        "age": 500,
+                        "profile": "古老的元素精灵，指导苏雨晴掌握力量。",
+                        "headpic": "header_element_spirit",
+                    }
+                },
+                {
+                    "actId": 1035,
+                    "title": "学院挑战",
+                    "desc": "你扮演苏雨晴，参加学院年度魔法大赛。",
+                    "background": "宏伟的魔法竞技场，观众席座无虚席。",
+                    "coin": 15,
+                    "isLock": false,
+                    "playRole": {
+                        "name": "苏雨晴",
+                        "sex": "女",
+                        "age": 18,
+                        "profile": "在比赛中展现独特元素运用方式。",
+                        "headpic": "header_magic_girl",
+                    },
+                    "aiRole": {
+                        "name": "天才对手",
+                        "sex": "男",
+                        "age": 19,
+                        "profile": "魔法世家天才，对苏雨晴产生兴趣。",
+                        "headpic": "header_magic_rival",
+                    }
+                },
+                {
+                    "actId": 1036,
+                    "title": "元素奥秘",
+                    "desc": "你扮演苏雨晴，探索元素力量的终极奥秘。",
+                    "background": "神秘的魔法图书馆，古老的魔法典籍。",
+                    "coin": 20,
+                    "isLock": false,
+                    "playRole": {
+                        "name": "苏雨晴",
+                        "sex": "女",
+                        "age": 18,
+                        "profile": "发现元素力量的惊人真相。",
+                        "headpic": "header_magic_girl",
+                    },
+                    "aiRole": {
+                        "name": "图书馆守护者",
+                        "sex": "女",
+                        "age": 1000,
+                        "profile": "神秘的图书馆守护者，掌握着重要秘密。",
+                        "headpic": "header_library_guardian",
+                    }
+                }
+            ]
+        },
+        {
             "name": "玄门异志",
             "audioFile": "Hidden",
             "cover": "magic_story_cover",
@@ -375,6 +505,8 @@
                     "title": "通灵初体验",
                     "desc": "你扮演李小白，刚获得通灵能力的道士学徒。",
                     "background": "古老的道观，香火缭绕。",
+                    "coin": 0,
+                    "isLock": true,
                     "playRole": {
                         "name": "李小白",
                         "sex": "男",
@@ -395,6 +527,8 @@
                     "title": "除妖任务",
                     "desc": "你扮演李小白，第一次独立处理灵异事件。",
                     "background": "废弃的老宅，阴森恐怖。",
+                    "coin": 0,
+                    "isLock": true,
                     "playRole": {
                         "name": "李小白",
                         "sex": "男",
@@ -415,6 +549,8 @@
                     "title": "都市怪谈",
                     "desc": "你扮演李小白，调查都市传说事件。",
                     "background": "繁华都市的地铁站，午夜时分。",
+                    "coin": 0,
+                    "isLock": true,
                     "playRole": {
                         "name": "李小白",
                         "sex": "男",
@@ -435,6 +571,8 @@
                     "title": "百鬼夜行",
                     "desc": "你扮演李小白，参与年度除妖大会。",
                     "background": "城市中心公园，月圆之夜。",
+                    "coin": 0,
+                    "isLock": true,
                     "playRole": {
                         "name": "李小白",
                         "sex": "男",
@@ -467,6 +605,8 @@
                     "title": "创业初期",
                     "desc": "你扮演程序员张小明，和朋友们开始创业。",
                     "background": "简陋的车库办公室，几台旧电脑就是全部家当。",
+                    "coin": 0,
+                    "isLock": true,
                     "playRole": {
                         "name": "张小明",
                         "sex": "男",
@@ -487,6 +627,8 @@
                     "title": "团队危机",
                     "desc": "你扮演张小明，面临团队分裂的危机。",
                     "background": "公司会议室，气氛紧张。",
+                    "coin": 0,
+                    "isLock": true,
                     "playRole": {
                         "name": "张小明",
                         "sex": "男",
@@ -507,6 +649,8 @@
                     "title": "产品转型",
                     "desc": "你扮演张小明，面临重要的产品方向选择。",
                     "background": "创业园区的咖啡厅，充满创意的氛围。",
+                    "coin": 0,
+                    "isLock": true,
                     "playRole": {
                         "name": "张小明",
                         "sex": "男",
@@ -527,6 +671,8 @@
                     "title": "商业谈判",
                     "desc": "你扮演张小明，与大公司谈判合作。",
                     "background": "高档商务中心，谈判室内气氛凝重。",
+                    "coin": 0,
+                    "isLock": true,
                     "playRole": {
                         "name": "张小明",
                         "sex": "男",
@@ -557,6 +703,8 @@
                     "title": "神秘实验",
                     "desc": "你扮演科学家林博士，负责一项机密实验。",
                     "background": "未来科技实验室，全息投影和智能机器人随处可见。",
+                    "coin": 10,
+                    "isLock": true,
                     "playRole": {
                         "name": "林博士",
                         "sex": "男",
@@ -577,6 +725,8 @@
                     "title": "道德抉择",
                     "desc": "你扮演林博士，面临关于AI伦理的重大决定。",
                     "background": "实验室核心控制室，充满未来科技感。",
+                    "coin": 10,
+                    "isLock": true,
                     "playRole": {
                         "name": "林博士",
                         "sex": "男",
@@ -597,6 +747,8 @@
                     "title": "数据危机",
                     "desc": "你扮演林博士，处理AI系统异常。",
                     "background": "实验室紧急控制中心，警报声此起彼伏。",
+                    "coin": 10,
+                    "isLock": true,
                     "playRole": {
                         "name": "林博士",
                         "sex": "男",
@@ -617,6 +769,8 @@
                     "title": "突破极限",
                     "desc": "你扮演林博士，尝试一项革命性实验。",
                     "background": "先进的量子计算实验室，设备闪烁着神秘的光芒。",
+                    "coin": 10,
+                    "isLock": true,
                     "playRole": {
                         "name": "林博士",
                         "sex": "男",
@@ -630,6 +784,202 @@
                         "age": 1,
                         "profile": "已进化的AI助手，展现出超越人类的智慧。",
                         "headpic": "header_xiaoai",
+                    }
+                }
+            ]
+        },
+        {
+            "name": "星际迷航：时空守护者",
+            "audioFile": "Cosmic",
+            "cover": "space_guardian_cover",
+            "chatNum": 95,
+            "mid": 4,
+            "intro": "在遥远的未来，人类已经建立了星际文明。主角林星辰作为时空守护者，负责维护各个时空的平衡。",
+            "act": [
+                {
+                    "actId": 1029,
+                    "title": "时空裂缝",
+                    "desc": "你扮演林星辰，发现一个危险的时空裂缝。",
+                    "background": "未来太空站，全息投影显示着复杂的时空数据。",
+                    "coin": 0,
+                    "isLock": true,
+                    "playRole": {
+                        "name": "林星辰",
+                        "sex": "男",
+                        "age": 30,
+                        "profile": "时空守护者，拥有操控时空的能力，性格冷静理性。",
+                        "headpic": "header_space_guardian",
+                    },
+                    "aiRole": {
+                        "name": "艾莉",
+                        "sex": "女",
+                        "age": 25,
+                        "profile": "人工智能助手，负责分析时空数据，性格活泼。",
+                        "headpic": "header_space_ai",
+                    }
+                },
+                {
+                    "actId": 1030,
+                    "title": "远古文明",
+                    "desc": "你扮演林星辰，探索一个失落的远古文明。",
+                    "background": "神秘的远古遗迹，充满未知的科技。",
+                    "coin": 10,
+                    "isLock": false,
+                    "playRole": {
+                        "name": "林星辰",
+                        "sex": "男",
+                        "age": 30,
+                        "profile": "在探索过程中发现惊人的文明真相。",
+                        "headpic": "header_space_guardian",
+                    },
+                    "aiRole": {
+                        "name": "远古守护者",
+                        "sex": "男",
+                        "age": 10000,
+                        "profile": "远古文明的最后守护者，掌握着惊人的知识。",
+                        "headpic": "header_ancient_guardian",
+                    }
+                },
+                {
+                    "actId": 1031,
+                    "title": "时空危机",
+                    "desc": "你扮演林星辰，面对时空崩溃的危机。",
+                    "background": "时空管理局总部，警报声此起彼伏。",
+                    "coin": 15,
+                    "isLock": false,
+                    "playRole": {
+                        "name": "林星辰",
+                        "sex": "男",
+                        "age": 30,
+                        "profile": "必须在有限时间内修复时空裂缝。",
+                        "headpic": "header_space_guardian",
+                    },
+                    "aiRole": {
+                        "name": "时空局长",
+                        "sex": "女",
+                        "age": 45,
+                        "profile": "经验丰富的时空管理者，给予关键指导。",
+                        "headpic": "header_space_director",
+                    }
+                },
+                {
+                    "actId": 1032,
+                    "title": "最终抉择",
+                    "desc": "你扮演林星辰，做出影响时空命运的决定。",
+                    "background": "时空核心，能量波动剧烈。",
+                    "coin": 20,
+                    "isLock": false,
+                    "playRole": {
+                        "name": "林星辰",
+                        "sex": "男",
+                        "age": 30,
+                        "profile": "面临拯救现在还是保护未来的艰难选择。",
+                        "headpic": "header_space_guardian",
+                    },
+                    "aiRole": {
+                        "name": "未来使者",
+                        "sex": "女",
+                        "age": 35,
+                        "profile": "来自未来的神秘人物，带来重要信息。",
+                        "headpic": "header_future_messenger",
+                    }
+                }
+            ]
+        },
+        {
+            "name": "医疗精英",
+            "audioFile": "Healing",
+            "cover": "medical_elite_cover",
+            "chatNum": 91,
+            "mid": 203,
+            "intro": "在顶级医院，天才医生陈明远带领团队突破医学难题，同时面对各种人生抉择。",
+            "act": [
+                {
+                    "actId": 1037,
+                    "title": "急诊之夜",
+                    "desc": "你扮演陈明远，处理一个复杂的急诊病例。",
+                    "background": "现代化医院急诊室，紧张忙碌。",
+                    "coin": 0,
+                    "isLock": true,
+                    "playRole": {
+                        "name": "陈明远",
+                        "sex": "男",
+                        "age": 35,
+                        "profile": "天才外科医生，性格冷静，医术精湛。",
+                        "headpic": "header_doctor_chen",
+                    },
+                    "aiRole": {
+                        "name": "林护士长",
+                        "sex": "女",
+                        "age": 40,
+                        "profile": "经验丰富的护士长，是陈明远最得力的助手。",
+                        "headpic": "header_nurse_lin",
+                    }
+                },
+                {
+                    "actId": 1038,
+                    "title": "手术抉择",
+                    "desc": "你扮演陈明远，面临一个艰难的手术决定。",
+                    "background": "手术室，无影灯下气氛凝重。",
+                    "coin": 10,
+                    "isLock": false,
+                    "playRole": {
+                        "name": "陈明远",
+                        "sex": "男",
+                        "age": 35,
+                        "profile": "在医学伦理和手术风险间做出选择。",
+                        "headpic": "header_doctor_chen",
+                    },
+                    "aiRole": {
+                        "name": "王主任",
+                        "sex": "男",
+                        "age": 55,
+                        "profile": "医院外科主任，给予重要建议。",
+                        "headpic": "header_director_wang",
+                    }
+                },
+                {
+                    "actId": 1039,
+                    "title": "团队危机",
+                    "desc": "你扮演陈明远，处理医疗团队内部矛盾。",
+                    "background": "医院会议室，团队成员各执己见。",
+                    "coin": 15,
+                    "isLock": false,
+                    "playRole": {
+                        "name": "陈明远",
+                        "sex": "男",
+                        "age": 35,
+                        "profile": "在团队管理和医疗创新间寻找平衡。",
+                        "headpic": "header_doctor_chen",
+                    },
+                    "aiRole": {
+                        "name": "张医生",
+                        "sex": "女",
+                        "age": 32,
+                        "profile": "年轻有为的住院医师，对陈明远既敬佩又质疑。",
+                        "headpic": "header_doctor_zhang",
+                    }
+                },
+                {
+                    "actId": 1040,
+                    "title": "医学突破",
+                    "desc": "你扮演陈明远，尝试一项革命性的手术方案。",
+                    "background": "先进的手术室，最新医疗设备。",
+                    "coin": 20,
+                    "isLock": false,
+                    "playRole": {
+                        "name": "陈明远",
+                        "sex": "男",
+                        "age": 35,
+                        "profile": "冒险尝试新的手术方法，可能改变医学界。",
+                        "headpic": "header_doctor_chen",
+                    },
+                    "aiRole": {
+                        "name": "李教授",
+                        "sex": "男",
+                        "age": 60,
+                        "profile": "医学界泰斗，对陈明远的研究给予支持。",
+                        "headpic": "header_professor_li",
                     }
                 }
             ]

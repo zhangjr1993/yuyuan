@@ -148,7 +148,7 @@ extension CatalogueController: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
-        return 60 // 44 + padding
+        return 85
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -181,10 +181,50 @@ extension CatalogueController: UITableViewDelegate, UITableViewDataSource {
             return
         }
         
-        let actModel = acts[indexPath.row]
+        var actModel = acts[indexPath.row]
+        let tempArr = UserManager.shared.actIdArray
+        actModel.isLock = tempArr.contains(actModel.actId)
+        
+        if !actModel.isLock && !UserManager.shared.isMembershipValid {
+            let alert = UIAlertController(title: "温馨提示", message: "是否消耗\(actModel.coin)金币解锁故事？", preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: "确定", style: .default) { [weak self] _ in
+                guard let `self` = self else { return }
+                self.costFlower(storyModel, actModel)
+            })
+            present(alert, animated: true)
+            
+            return
+        }
         
         // 导航到聊天界面
         navigateToChat(storyModel: storyModel, actModel: actModel)
+    }
+    
+    private func costFlower(_ storyModel: StoryModel, _ model: ActModel) {
+        if UserManager.shared.currentUser.coin - model.coin >= 0  {
+            if !UserManager.shared.actIdArray.contains(model.actId) {
+                var tempArr = UserManager.shared.actIdArray
+                tempArr.append(model.actId)
+                UserManager.shared.actIdArray = tempArr
+            }
+            var currentUser = UserManager.shared.currentUser
+            currentUser.coin -= model.coin
+            UserManager.shared.updateUser(coin: currentUser.coin)
+            
+            tableView.reloadData()
+            navigateToChat(storyModel: storyModel, actModel: model)
+        }else {
+            let alert = UIAlertController(title: "温馨提示", message: "余额不足，是否前往充值页面？", preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: "前往", style: .default) { [weak self] _ in
+                guard let `self` = self else { return }
+                let vc = MemberController()
+                self.navigationController?.pushViewController(vc, animated: true)
+            })
+            alert.addAction(UIAlertAction(title: "取消", style: .cancel) { _ in
+                
+            })
+            present(alert, animated: true)
+        }
     }
 }
 
