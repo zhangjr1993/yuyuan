@@ -381,7 +381,7 @@ class MemberController: BasicController {
         } catch {
             await MainActor.run {
                 ProgressHUD.dismiss()
-                showAlert(title: "错误", message: "购买失败：\(error.localizedDescription)")
+                showAlert(title: "错误", message: "购买失败1：\(error.localizedDescription)")
             }
         }
     }
@@ -419,7 +419,7 @@ class MemberController: BasicController {
                 do {
                     try await self.purchase(product)
                 } catch {
-                    self.showAlert(title: "错误", message: "购买失败：\(error.localizedDescription)")
+                    self.showAlert(title: "错误2", message: "购买失败：\(error.localizedDescription)")
                 }
             }
         }
@@ -495,7 +495,7 @@ extension MemberController: UICollectionViewDelegate, UICollectionViewDataSource
                                     do {
                                         try await purchase(product)
                                     } catch {
-                                        showAlert(title: "错误", message: "购买失败：\(error.localizedDescription)")
+                                        showAlert(title: "错误3", message: "购买失败：\(error.localizedDescription)")
                                     }
                                 }
                             }
@@ -527,7 +527,7 @@ extension MemberController: UICollectionViewDelegate, UICollectionViewDataSource
                     do {
                         try await purchase(product)
                     } catch {
-                        showAlert(title: "错误", message: "购买失败：\(error.localizedDescription)")
+                        showAlert(title: "错误4", message: "购买失败：\(error.localizedDescription)")
                     }
                 }
             }
