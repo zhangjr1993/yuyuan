@@ -19,18 +19,15 @@ struct PurchaseItem {
     
     // MARK: - Properties
     static let purchaseItems: [PurchaseItem] = [
-//        PurchaseItem(coins: 60, price: 6.0, productId: "com.fujinyy.keyuyuan60", isSubscription: false, subscriptionType: ""),
-//        PurchaseItem(coins: 300, price: 28.0, productId: "com.fujinyy.keyuyuan300", isSubscription: false, subscriptionType: ""),
-//        PurchaseItem(coins: 1130, price: 98.0, productId: "com.fujinyy.keyuyuan1130", isSubscription: false, subscriptionType: ""),
-//        PurchaseItem(coins: 2350, price: 198.0, productId: "com.fujinyy.keyuyuan2350", isSubscription: false, subscriptionType: ""),
-//        PurchaseItem(coins: 3070, price: 268.0, productId: "com.fujinyy.keyuyuan3070", isSubscription: false, subscriptionType: ""),
-//        PurchaseItem(coins: 3600, price: 298.0, productId: "com.fujinyy.keyuyuan3600", isSubscription: false, subscriptionType: ""),
-//        PurchaseItem(coins: 0, price: 88.0, productId: "com.fujinyy.keyuyuan0", isSubscription: true, subscriptionType: "首充月会员"),
-//        PurchaseItem(coins: 0, price: 98.0, productId: "com.fujinyy.keyuyuan1", isSubscription: true, subscriptionType: "月会员"),
-//        PurchaseItem(coins: 0, price: 268.0, productId: "com.fujinyy.keyuyuan2", isSubscription: true, subscriptionType: "季会员")
-        PurchaseItem(coins: 328, price: 328.0, productId: "ai_honey_year", isSubscription: false, subscriptionType: ""),
-        PurchaseItem(coins: 98, price: 98.0, productId: "ai_honey_month", isSubscription: true, subscriptionType: "月会员"),
-
+        PurchaseItem(coins: 60, price: 6.0, productId: "com.fujinyy.keyuyuan60", isSubscription: false, subscriptionType: ""),
+        PurchaseItem(coins: 300, price: 28.0, productId: "com.fujinyy.keyuyuan300", isSubscription: false, subscriptionType: ""),
+        PurchaseItem(coins: 1130, price: 98.0, productId: "com.fujinyy.keyuyuan1130", isSubscription: false, subscriptionType: ""),
+        PurchaseItem(coins: 2350, price: 198.0, productId: "com.fujinyy.keyuyuan2350", isSubscription: false, subscriptionType: ""),
+        PurchaseItem(coins: 3070, price: 268.0, productId: "com.fujinyy.keyuyuan3070", isSubscription: false, subscriptionType: ""),
+        PurchaseItem(coins: 3600, price: 298.0, productId: "com.fujinyy.keyuyuan3600", isSubscription: false, subscriptionType: ""),
+        PurchaseItem(coins: 0, price: 88.0, productId: "com.fujinyy.keyuyuan0", isSubscription: true, subscriptionType: "首充月会员"),
+        PurchaseItem(coins: 0, price: 98.0, productId: "com.fujinyy.keyuyuan1", isSubscription: true, subscriptionType: "月会员"),
+        PurchaseItem(coins: 0, price: 268.0, productId: "com.fujinyy.keyuyuan2", isSubscription: true, subscriptionType: "季会员")
     ]
 }
 
