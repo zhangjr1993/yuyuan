@@ -10,6 +10,7 @@
 		0E414E8EC1424F7DD328C4DD /* Pods_Runner.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D5684C2F29B687043D35ED9 /* Pods_Runner.framework */; };
 		3B3967161E833CAA004F5970 /* AppFrameworkInfo.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3B3967151E833CAA004F5970 /* AppFrameworkInfo.plist */; };
 		AE4A93802DDC26C300144E39 /* MemberController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE4A937F2DDC26C300144E39 /* MemberController.swift */; };
+		AE5C96982DDEC3DF000EC9A1 /* MemberManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE5C96972DDEC3DF000EC9A1 /* MemberManager.swift */; };
 		AE6136102DDC665B0001859A /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE61360F2DDC665B0001859A /* StoreKit.framework */; };
 		AE903A242DDAC89C00D99E04 /* Pulsewave.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = AE903A222DDAC89C00D99E04 /* Pulsewave.mp3 */; };
 		AE903A252DDAC89C00D99E04 /* Victory.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = AE903A232DDAC89C00D99E04 /* Victory.mp3 */; };
@@ -100,6 +101,7 @@
 		9740EEB31CF90195004384FC /* Generated.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = Generated.xcconfig; path = Flutter/Generated.xcconfig; sourceTree = "<group>"; };
 		97C146EE1CF9000F007C117D /* Runner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Runner.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE4A937F2DDC26C300144E39 /* MemberController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemberController.swift; sourceTree = "<group>"; };
+		AE5C96972DDEC3DF000EC9A1 /* MemberManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemberManager.swift; sourceTree = "<group>"; };
 		AE61360E2DDC66440001859A /* RunnerDebug.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = RunnerDebug.entitlements; sourceTree = "<group>"; };
 		AE61360F2DDC665B0001859A /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		AE903A1F2DDAC89C00D99E04 /* DoubleTake.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = DoubleTake.mp3; sourceTree = "<group>"; };
@@ -230,6 +232,14 @@
 				97C146EE1CF9000F007C117D /* Runner.app */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		AE5C96992DDEC3E4000EC9A1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				AE5C96972DDEC3DF000EC9A1 /* MemberManager.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		AEA8789A2DD48ECF003D8DBF /* Controllers */ = {
@@ -453,6 +463,7 @@
 		AEA878D62DD48ECF003D8DBF /* UserCenter */ = {
 			isa = PBXGroup;
 			children = (
+				AE5C96992DDEC3E4000EC9A1 /* Model */,
 				AEA878D22DD48ECF003D8DBF /* Controllers */,
 				AEA878D52DD48ECF003D8DBF /* Views */,
 			);
@@ -725,6 +736,7 @@
 				AEA8790E2DD48ECF003D8DBF /* StoryChatController.swift in Sources */,
 				AEA8790F2DD48ECF003D8DBF /* StoryDetailController.swift in Sources */,
 				AEA879102DD48ECF003D8DBF /* StorySquareController.swift in Sources */,
+				AE5C96982DDEC3DF000EC9A1 /* MemberManager.swift in Sources */,
 				AEA879112DD48ECF003D8DBF /* ChatMessageModel.swift in Sources */,
 				AEA879122DD48ECF003D8DBF /* MessageModel.swift in Sources */,
 				AEA879132DD48ECF003D8DBF /* StoryListModel.swift in Sources */,
@@ -839,16 +851,16 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 2;
+				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_TEAM = "";
 				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = 3K78M2UYQ3;
 				ENABLE_BITCODE = NO;
 				FLUTTER_APPLICATION_PATH = /Users/runner/work/yuyuan/yuyuan;
 				FLUTTER_BUILD_NAME = 1.0.1;
-				FLUTTER_BUILD_NUMBER = 2;
+				FLUTTER_BUILD_NUMBER = 3;
 				FLUTTER_ROOT = "/Users/runner/hostedtoolcache/flutter/3.24.4-stable/arm64";
 				INFOPLIST_FILE = Runner/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -986,16 +998,16 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = Runner/RunnerDebug.entitlements;
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 2;
+				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_TEAM = "";
 				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = 3K78M2UYQ3;
 				ENABLE_BITCODE = NO;
 				FLUTTER_APPLICATION_PATH = /Users/runner/work/yuyuan/yuyuan;
 				FLUTTER_BUILD_NAME = 1.0.1;
-				FLUTTER_BUILD_NUMBER = 2;
+				FLUTTER_BUILD_NUMBER = 3;
 				FLUTTER_ROOT = "/Users/runner/hostedtoolcache/flutter/3.24.4-stable/arm64";
 				INFOPLIST_FILE = Runner/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1025,16 +1037,16 @@
 				CLANG_ENABLE_MODULES = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 2;
+				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_TEAM = "";
 				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = 3K78M2UYQ3;
 				ENABLE_BITCODE = NO;
 				FLUTTER_APPLICATION_PATH = /Users/runner/work/yuyuan/yuyuan;
 				FLUTTER_BUILD_NAME = 1.0.1;
-				FLUTTER_BUILD_NUMBER = 2;
+				FLUTTER_BUILD_NUMBER = 3;
 				FLUTTER_ROOT = "/Users/runner/hostedtoolcache/flutter/3.24.4-stable/arm64";
 				INFOPLIST_FILE = Runner/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

@@ -5,7 +5,7 @@ class WebViewController: BasicController {
     private let webView: WKWebView = {
         let configuration = WKWebViewConfiguration()
         let preferences = WKWebpagePreferences()
-        preferences.allowsContentJavaScript = true
+//        preferences.allowsContentJavaScript = true
         configuration.defaultWebpagePreferences = preferences
         
         // 配置进程池
